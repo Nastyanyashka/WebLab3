@@ -2,7 +2,7 @@
   "name": "lab3",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/Swiper.html",
+  "main": "./API/api.js",
   "scripts": {
     "build": "NODE_ENV='production' webpack",
     "start": "webpack-dev-server",
@@ -17,5 +17,8 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
   }
 }

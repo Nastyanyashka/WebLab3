@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/Swiper.html',
+    entry: './API/api.js',
     mode: 'production',
     module: {
         rules: [
@@ -11,12 +11,13 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index_bundle.js'
+        path: path.resolve(__dirname, 'dist2'),
+        filename: 'index_bundle2.js'
       },
     plugins: [
         new HtmlWebpackPlugin(
-            {template:'./src/Swiper.html',}
+            {template:'./API/api_int.html',}
+            
         )
       ]
 }
