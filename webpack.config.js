@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './API/api.js',
-    mode: 'production',
+    mode: 'development',
     module: {
         rules: [
             { test: /\.html$/i, use: 'html-loader' },
